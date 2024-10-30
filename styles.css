@@ -1,5 +1,6 @@
+/* Header Styles */
 header {
-    background-color:#3C037E; /* Background color */
+    background-color: #3C037E; /* Background color */
     color: white; /* Text color */
     padding: 10px 0; /* Padding for top and bottom */
     text-align: center; /* Center the text */
@@ -7,17 +8,98 @@ header {
     top: 0;
     width: 100%; /* Full width */
     z-index: 1000; /* Ensure it stays on top */
-  }
-  
-  nav {
+}
+
+nav {
     display: flex; /* Align links horizontally */
     justify-content: center; /* Center the links */
     gap: 20px; /* Space between links */
-  }
-  
-  nav a {
+}
+
+nav a {
     color: white; /* Link color */
     text-decoration: none; /* Remove underline */
     padding: 10px; /* Padding around links */
+}
+
+/* Hero Section Styles */
+.hero {
+    background-image: url('your-hero-image-url.jpg'); /* Add your hero image URL */
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the image */
+    height: 60vh; /* Set the height of the section */
+    display: flex; /* Use Flexbox */
+    justify-content: center; /* Align items horizontally */
+    align-items: center; /* Align items vertically */
+    text-align: center; /* Center the text */
+    color: white; /* Set the text color */
+}
+
+/* About Section Styles */
+.about {
+    padding: 40px 20px; /* Padding for the section */
+    display: flex; /* Use Flexbox */
+    justify-content: space-between; /* Align content */
+    gap: 20px; /* Space between elements */
+}
+
+.about-text {
+    flex: 1; /* Allow text to take available space */
+    min-width: 300px; /* Minimum width for the text */
+}
+
+.about img {
+    flex: 1; /* Allow image to take available space */
+    max-width: 400px; /* Maximum width for the image */
+    border-radius: 8px; /* Rounded corners for the image */
+}
+
+/* Services Section Styles */
+.services {
+    background-color: #f9f9f9; /* Background color */
+    padding: 40px 20px; /* Padding for the section */
+    text-align: center; /* Center align text */
+}
+
+.cards {
+    display: flex; /* Use Flexbox */
+    justify-content: space-around; /* Align cards */
+    gap: 20px; /* Space between cards */
+    flex-wrap: wrap; /* Allow wrapping of cards on smaller screens */
+}
+
+.card {
+    background-color: white; /* Background color for the card */
+    padding: 20px; /* Padding for the card */
+    width: 250px; /* Width of the card */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+footer {
+    background-color: #3C037E; /* Background color */
+    color: white; /* Text color */
+    text-align: center; /* Center align text */
+    padding: 20px; /* Padding for the footer */
+    position: relative; /* Relative positioning */
+    bottom: 0; /* Stick to the bottom */
+    width: 100%; /* Full width */
+  }
+  @media (max-width: 768px) { /* Adjust the breakpoint as needed */
+    .hero h1 {
+      font-size: 2rem; /* Decrease the font size */
+    }
+  
+    .hero p {
+      font-size: 1rem; /* Decrease the font size */
+    }
+  
+    .about, .cards {
+      flex-direction: column; /* Stack elements vertically */
+    }
+  
+    .card {
+      width: 100%; /* Make cards full width on small screens */
+      margin-bottom: 20px; /* Add spacing between cards */
+    }
   }
   
