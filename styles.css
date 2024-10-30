@@ -1,0 +1,23 @@
+header {
+    background-color:#3C037E; /* Background color */
+    color: white; /* Text color */
+    padding: 10px 0; /* Padding for top and bottom */
+    text-align: center; /* Center the text */
+    position: fixed; /* Fix the header */
+    top: 0;
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensure it stays on top */
+  }
+  
+  nav {
+    display: flex; /* Align links horizontally */
+    justify-content: center; /* Center the links */
+    gap: 20px; /* Space between links */
+  }
+  
+  nav a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+    padding: 10px; /* Padding around links */
+  }
+  
